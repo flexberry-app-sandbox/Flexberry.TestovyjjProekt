@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISTestovyjjProektПродажа",
+  "modelName": "i-i-s-testovyjj-proekt-продажа",
+  "className": "Продажа",
+  "nameSpace": "IIS.TestovyjjProekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-testovyjj-proekt-клиент",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "строка",
+      "relatedTo": "i-i-s-testovyjj-proekt-строка",
+      "inverse": "продажа"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПродажаE",
+      "modelName": "i-i-s-testovyjj-proekt-продажа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Название",
+          "lookupValueField": "название",
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Клиент",
+          "name": "клиент",
+          "relatedTo": "i-i-s-testovyjj-proekt-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "СтрокаE",
+          "caption": "Строка",
+          "name": "строка",
+          "relatedTo": "i-i-s-testovyjj-proekt-строка",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПродажаL",
+      "modelName": "i-i-s-testovyjj-proekt-продажа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Название",
+          "name": "клиент",
+          "relatedTo": "i-i-s-testovyjj-proekt-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

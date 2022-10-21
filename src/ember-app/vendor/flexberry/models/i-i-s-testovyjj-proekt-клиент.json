@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISTestovyjjProektКлиент",
+  "modelName": "i-i-s-testovyjj-proekt-клиент",
+  "className": "Клиент",
+  "nameSpace": "IIS.TestovyjjProekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "название",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлиентE",
+      "modelName": "i-i-s-testovyjj-proekt-клиент",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КлиентL",
+      "modelName": "i-i-s-testovyjj-proekt-клиент",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

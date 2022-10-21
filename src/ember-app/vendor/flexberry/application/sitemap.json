@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Testovyjj proekt",
+  "applicationTitle": "Testovyjj proekt",
+  "items": [
+    {
+      "link": null,
+      "menuName": "продажи",
+      "caption": "Продажи",
+      "title": "Продажи",
+      "children": [
+        {
+          "link": "i-i-s-testovyjj-proekt-продажа-l",
+          "menuName": null,
+          "caption": "Продажа",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-testovyjj-proekt-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-testovyjj-proekt-товар-l",
+          "menuName": null,
+          "caption": "Товар",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
